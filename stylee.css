@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f4f7f6;
+    color: #333;
+    text-align: center;
+}
+
+
+/* ================= HOME LOGO ================= */
+
+.home-logo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #9c27b0;
+    margin-bottom: 15px;
+    background: white;
+}
+
+
+/* ================= TOP LOGO ================= */
+
+.logo-container {
+    background: white;
+    padding: 10px 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #9c27b0;
+    width: 100%;
+}
+
+.logo-img {
+    height: 80px;
+    width: auto;
+}
+
+
+/* ================= NAVBAR ================= */
+
+#mainNavbar {
+    background: #9c27b0;
+    padding: 12px 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    position: relative;
+    flex: 1;
+    min-width: 70px;
+}
+
+.nav-btn {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 1px solid white;
+    padding: 10px 2px;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    background: white;
+    color: #9c27b0;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    width: 150px;
+    z-index: 2000;
+}
+
+.dropdown-content div {
+    color: #333;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.dropdown-content div:hover {
+    background: #f1f1f1;
+    color: #9c27b0;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        ),
+        url('https://lovepetrescue.org/wp-content/uploads/2025/01/Why-Pet-Adoption-Is-Better-for-the-Environment.webp');
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+
+/* ================= PAGE ================= */
+
+.page {
+    display: none;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.active {
+    display: block;
+}
+
+
+/* ================= BOX ================= */
+
+.box {
+    background: white;
+    padding: 20px;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+
+    width: 95%;
+    max-width: 400px;
+
+    color: #333;
+}
+
+
+/* ================= GRID ================= */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+
+    padding: 15px;
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+/* ================= CARD ================= */
+
+.card {
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    border: 1px solid #eee;
+
+    position: relative;
+
+    min-height: 400px;
+
+    overflow: visible;
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+/* ================= IMAGE ================= */
+
+.img-box {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: #eee;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ================= FORM ================= */
+
+input,
+select,
+textarea,
+.btn {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    background: #9c27b0;
+
+    color: white;
+
+    border: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #7b1fa2;
+}
+
+
+/* ================= TERMS ================= */
+
+.rules-text {
+    text-align: left;
+
+    font-size: 13px;
+
+    max-height: 300px;
+
+    overflow-y: auto;
+
+    margin-bottom: 15px;
+
+    padding: 10px;
+
+    background: #f9f9f9;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+}
+
+
+.instruction-box {
+    background: #fff3e0;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+
+    border-left: 4px solid #ff9800;
+
+    font-weight: bold;
+}
+
+
+/* ================= ADMIN ================= */
+
+#adminTag {
+    display: none;
+
+    color: #2196f3;
+
+    margin-top: 15px;
+}
+
+
+#adminPanel {
+    display: none;
+
+    background: #e3f2fd;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    margin: 20px auto;
+
+    max-width: 400px;
+
+    border: 2px dashed #2196f3;
+}
+
+
+#historyPanel {
+    display: none;
+
+    background: white;
+
+    padding: 15px;
+
+    margin: 20px auto;
+
+    max-width: 400px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.del-btn {
+    background: #ff4444;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    width: 100%;
+
+    margin-top: 5px;
+}
+
+.del-btn:hover {
+    background: #dd2222;
+}
+
+
+/* ================= NAV LOGO ================= */
+
+.nav-logo {
+    position: absolute;
+
+    left: 10px;
+
+    top: 5px;
+
+    z-index: 3000;
+}
+
+.nav-logo img {
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    border: 2px solid white;
+
+    object-fit: cover;
+}
+
+
+/* ================= INFO ================= */
+
+.info {
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= QR ================= */
+
+.qr-code {
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: contain;
+
+    margin: 10px auto;
+}
+
+
+/* ================= AGREE ================= */
+
+.agree-label {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin: 10px 0;
+}
+
+.agree-label input {
+    width: auto;
+
+    margin: 0;
+}
+
+
+/* ================= BACK BUTTON ================= */
+
+.back-btn {
+    width: 120px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .card {
+        min-height: 300px;
+    }
+
+    .nav-btn {
+        font-size: 8px;
+        padding: 8px 2px;
+    }
+
+    .nav-logo img {
+        width: 38px;
+        height: 38px;
+    }
+}

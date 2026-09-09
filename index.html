@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsid Pet Adoption - Final System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= TOP LOGO ================= -->
+<div class="logo-container" id="topLogo">
+    <img src="https://i.ibb.co/v4jhKvPg/IMG-20260410-WA0022-jpg.jpg"
+         class="logo-img"
+         alt="Varsid Logo">
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+<div id="mainNavbar">
+
+    <div class="nav-logo">
+        <img src="https://i.ibb.co/v4jhKvPg/IMG-20260410-WA0022-jpg.jpg"
+             alt="Logo">
+    </div>
+
+    <div class="nav-item">
+        <button onclick="go('p_home')" class="nav-btn">Home</button>
+    </div>
+
+
+    <!-- DOCTOR -->
+    <div class="nav-item">
+
+        <button onclick="toggleDrop('docMenu')" class="nav-btn">
+            Doctor
+        </button>
+
+        <div id="docMenu" class="dropdown-content">
+
+            <div onclick="window.open('https://drive.google.com/file/d/1udmNF-xtHjQX_Rq8GRwf1zKBlTJgby-E/view?usp=sharing','_blank')">
+                Find Near Me
+            </div>
+
+            <div onclick="alert('Emergency Contact: 101')">
+                Emergency
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- HEALTH -->
+    <div class="nav-item">
+
+        <button onclick="toggleDrop('hMenu')" class="nav-btn">
+            Health
+        </button>
+
+        <div id="hMenu" class="dropdown-content">
+
+            <div onclick="window.open('https://drive.google.com/file/d/1Jfpt6Ohi-RJSN7uln_nvcM7BIgbBtvg0/view?usp=sharing','_blank')">
+                Dog Health
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1Jfpt6Ohi-RJSN7uln_nvcM7BIgbBtvg0/view?usp=sharing','_blank')">
+                Cat Health
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1sHdiLyK0XTEqeH10u4gPP4x8YQnvbiky/view?usp=sharing','_blank')">
+                Bird Health
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/17ZfHZGhSIxv-9Jw7tXixGVp0i49fnYTH/view?usp=sharing','_blank')">
+                Rabbit Health
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- DISEASE -->
+    <div class="nav-item">
+
+        <button onclick="toggleDrop('DiseaseMenu')" class="nav-btn">
+            Disease
+        </button>
+
+        <div id="DiseaseMenu" class="dropdown-content">
+
+            <div onclick="window.open('https://drive.google.com/file/d/1kRBEEyh5pRW5sKTfv4UBDMvJgtkN4BCB/view?usp=sharing','_blank')">
+                Dog Disease
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1dn-0WYZhhwBTd4w6IXpmDrY3LmwHmo68/view?usp=sharing','_blank')">
+                Cat Disease
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1l8ea-CP6VlcqqFQ-yJbPiYSEzWwebSo4/view?usp=sharing','_blank')">
+                Bird Disease
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1XWGv6WU0tXXY_jvwdT2ExR1_PK41Aoqk/view?usp=sharing','_blank')">
+                Rabbit Diseases
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- LAWS -->
+    <div class="nav-item">
+
+        <button onclick="toggleDrop('lowsMenu')" class="nav-btn">
+            Laws
+        </button>
+
+        <div id="lowsMenu" class="dropdown-content">
+
+            <div onclick="window.open('https://drive.google.com/file/d/1ExmHE8RVMdIRjs3kNx4p2rxgTmQ_1zJ6/view?usp=sharing','_blank')">
+                Dog Laws
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1gITbjlE1NxGwAHsKdLuFACMVHvFJ9Izd/view?usp=sharing','_blank')">
+                Cat Laws
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1Eb1rpYaLT9r7_aTV-q78YEATaaQ4hbDE/view?usp=sharing','_blank')">
+                Bird Laws
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1NdiO-hY3_4tNZ489JCX9pFo0yg8XlTY1/view?usp=sharing','_blank')">
+                Rabbit Laws
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- DAILY ROUTINE -->
+    <div class="nav-item">
+
+        <button onclick="toggleDrop('routineMenu')" class="nav-btn">
+            Daily Routine
+        </button>
+
+        <div id="routineMenu" class="dropdown-content">
+
+            <div onclick="window.open('https://drive.google.com/file/d/1Xl1bXhSPOGb0L90OeltkhW_em_crs2Nk/view?usp=sharing','_blank')">
+                Dog Routine
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1o3yyXkGaXCpuCOGpmLJEaxWUiaGW1JC4/view?usp=sharing','_blank')">
+                Cat Routine
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/115ZykJ1hbOJCGOjhElzEaOXM_pdrOEvn/view?usp=sharing','_blank')">
+                Bird Routine
+            </div>
+
+            <div onclick="window.open('https://drive.google.com/file/d/1zZUq9p8CxjVa_IEArlrjPMTo2u88F-pm/view?usp=sharing','_blank')">
+                Rabbit Routine
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ================= HOME ================= -->
+<div id="p_home" class="page active">
+
+    <div class="hero-section">
+
+        <div class="box">
+
+            <img src="https://i.ibb.co/v4jhKvPg/IMG-20260410-WA0022-jpg.jpg"
+                 class="home-logo-circle"
+                 alt="Varsida Logo">
+
+            <h1>Welcome Varsid Pet Adoption</h1>
+
+            <button class="btn" onclick="go('p_reg')">
+                Register
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= LOGIN ================= -->
+<div id="p1" class="page">
+
+    <div class="hero-section">
+
+        <div class="box">
+
+            <img src="https://i.ibb.co/v4jhKvPg/IMG-20260410-WA0022-jpg.jpg"
+                 class="home-logo-circle"
+                 alt="Varsida Logo">
+
+            <h2>Login</h2>
+
+            <input type="text"
+                   id="logUser"
+                   placeholder="Username">
+
+            <input type="password"
+                   id="logPass"
+                   placeholder="Password">
+
+            <button class="btn" onclick="handleLogin()">
+                Login
+            </button>
+
+            <button class="btn" onclick="go('p_reg')">
+                Register
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= REGISTRATION ================= -->
+<div id="p_reg" class="page">
+
+    <div class="hero-section">
+
+        <div class="box">
+
+            <img src="https://i.ibb.co/v4jhKvPg/IMG-20260410-WA0022-jpg.jpg"
+                 class="home-logo-circle"
+                 alt="Varsida Logo">
+
+            <h2>Registration</h2>
+
+            <input type="text"
+                   id="regName"
+                   placeholder="Full Name">
+
+            <input type="tel"
+                   id="regMobile"
+                   placeholder="Mobile Number">
+
+            <input type="password"
+                   id="regPass"
+                   placeholder="Password">
+
+            <button class="btn" onclick="registerUser()">
+                Register
+            </button>
+
+            <button class="btn" onclick="go('p1')">
+                Back To Login
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= ADMIN TAG ================= -->
+<h3 id="adminTag">
+    Admin Mode
+</h3>
+
+
+<!-- ================= CATEGORY ================= -->
+<div id="p2" class="page">
+
+    <h3>Select Category</h3>
+
+    <div class="grid">
+
+        <div class="card" onclick="showBreeds('Dog')">
+
+            <div class="img-box">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-180680638-676f621f720bc.jpg?crop=1.00xw:0.752xh;0,0.118xh&resize=1200:*"
+                     alt="Dog">
+            </div>
+
+            <p>Dog</p>
+        </div>
+
+
+        <div class="card" onclick="showBreeds('Cat')">
+
+            <div class="img-box">
+                <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3NodXR0ZXJzdG9jay0yMjc4Nzc2MTg3LWhlcm8uanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo4Mjh9fX0="
+                     alt="Cat">
+            </div>
+
+            <p>Cat</p>
+        </div>
+
+
+        <div class="card" onclick="showBreeds('Bird')">
+
+            <div class="img-box">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/049/201/489/small/colorful-birds-perched-on-a-branch-in-a-lush-green-forest-during-daylight-photo.jpeg"
+                     alt="Bird">
+            </div>
+
+            <p>Bird</p>
+        </div>
+
+
+        <div class="card" onclick="showBreeds('Rabbit')">
+
+            <div class="img-box">
+                <img src="https://kau.in/sites/default/files/photos/img-1012.jpg"
+                     alt="Rabbit">
+            </div>
+
+            <p>Rabbit</p>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ================= BREEDS ================= -->
+<div id="p3" class="page">
+
+    <h3 id="breedTitle"></h3>
+
+    <div id="breedGrid" class="grid"></div>
+
+
+    <!-- ADMIN PANEL -->
+    <div id="adminPanel">
+
+        <h4>Admin: Add Pet</h4>
+
+        <input type="text"
+               id="addName"
+               placeholder="Pet Name">
+
+        <input type="text"
+               id="addPrice"
+               placeholder="Price">
+
+        <input type="text"
+               id="addImg"
+               placeholder="Image Link">
+
+        <input type="text"
+               id="addinfornation"
+               placeholder="Information of pet">
+
+        <button class="btn" onclick="addPetAdmin()">
+            Add Now
+        </button>
+
+
+        <!-- HISTORY -->
+        <div id="historyPanel">
+
+            <h3>Registered Users</h3>
+
+            <div id="historyList"></div>
+
+        </div>
+
+
+        <button class="btn back-btn" onclick="go('p2')">
+            Back
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TERMS ================= -->
+<div id="p4" class="page">
+
+    <div class="box">
+
+        <h2 id="pName"></h2>
+
+        <p id="pPrice"></p>
+
+
+        <div class="rules-text">
+
+            <b>Terms & Conditions:</b>
+
+            <p>
+                1. Lifetime Commitment: Adopting a pet is a long-term commitment (10-15 years).
+            </p>
+
+            <p>
+                2. Medical Care: Regular vaccinations required.
+            </p>
+
+            <p>
+                3. No Abandonment: Contact us if you can't keep it.
+            </p>
+
+            <div class="instruction-box">
+
+                Mandatory: The pet must wear an ID collar.
+
+                <p>
+                    4. Proper Food: Adopter must provide proper food and clean water daily.
+                </p>
+
+                <p>
+                    5. Safe Shelter: Pet must be given safe and clean living space.
+                </p>
+
+                <p>
+                    6. Vaccination: Timely vaccination and medical checkup is mandatory.
+                </p>
+
+                <p>
+                    7. Daily Exercise: Pet should receive proper exercise and care.
+                </p>
+
+                <p>
+                    8. No Reselling: Adopted pet cannot be sold or transferred.
+                </p>
+
+                <p>
+                    9. Emergency Care: Immediate treatment must be provided in illness.
+                </p>
+
+                <p>
+                    10. Adoption Follow-up: Adoption center may conduct follow-up checks.
+                </p>
+
+                <p>
+                    11. Abuse Prohibited: Any neglect or cruelty can cancel adoption.
+                </p>
+
+                <p>
+                    12. Return Policy: If unable to care, pet should be returned to center.
+                </p>
+
+                <div class="instruction-box">
+                    Mandatory: ID collar, vaccination record and proper care required after adoption.
+                </div>
+
+            </div>
+        </div>
+
+
+        <label class="agree-label">
+            <input type="checkbox" id="agree">
+            I agree
+        </label>
+
+
+        <button class="btn" onclick="checkAgreement()">
+            Next
+        </button>
+
+        <button class="btn" onclick="goBack('p3')">
+            Back
+        </button>
+
+    </div>
+</div>
+
+
+<!-- ================= PAYMENT ================= -->
+<div id="p_pay" class="page">
+
+    <div class="box">
+
+        <h3>Payment</h3>
+
+        <p>
+            Fee for <span id="payFor"></span>:
+            <span id="payAmt"></span>
+        </p>
+
+
+        <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=9284352472@upi"
+            class="qr-code"
+            alt="UPI QR"
+        >
+
+
+        <button class="btn" onclick="openUPI()">
+            Open UPI
+        </button>
+
+
+        <input type="text"
+               id="txnId"
+               placeholder="Txn ID">
+
+
+        <button class="btn" onclick="verifyPay()">
+            Verify
+        </button>
+
+
+        <button class="btn" onclick="goBack('p4')">
+            Back
+        </button>
+
+    </div>
+</div>
+
+
+<!-- ================= CUSTOMIZATION ================= -->
+<div id="p5" class="page">
+
+    <div class="box">
+
+        <h3>Customization</h3>
+
+
+        <select id="petGender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+
+        <input type="text"
+               id="petAgeReq"
+               placeholder="Age">
+
+
+        <input type="text"
+               id="petDuration"
+               placeholder="Duration">
+
+
+        <select id="petColor">
+            <option>Select Color Preference</option>
+            <option>Brown</option>
+            <option>White</option>
+            <option>Black</option>
+            <option>Mixed</option>
+        </select>
+
+
+        <select id="petSize">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+        </select>
+
+
+        <select id="petPurpose">
+            <option>Companion</option>
+            <option>Security</option>
+            <option>Breeding</option>
+        </select>
+
+
+        <select id="vaccinated">
+            <option>Vaccinated Pet</option>
+            <option>Non Vaccinated</option>
+        </select>
+
+
+        <select id="trained">
+            <option>Trained Pet</option>
+            <option>Untrained Pet</option>
+        </select>
+
+
+        <button class="btn" onclick="validateCustomization()">
+            Next
+        </button>
+
+
+        <button class="btn" onclick="goBack('p4')">
+            Back
+        </button>
+
+    </div>
+</div>
+
+
+<!-- ================= DETAILS ================= -->
+<div id="p6" class="page">
+
+    <div class="box">
+
+        <h3>Details</h3>
+
+
+        <input type="text"
+               id="custName"
+               placeholder="Name">
+
+
+        <input type="tel"
+               id="custMob"
+               placeholder="WhatsApp">
+
+
+        <input type="text"
+               id="custAadhar"
+               placeholder="Aadhar">
+
+
+        <textarea
+            id="custAddr"
+            placeholder="Address"></textarea>
+
+
+        <input type="number"
+               id="custAge"
+               placeholder="Your Age">
+
+
+        <select id="occupation">
+            <option>Student</option>
+            <option>Job</option>
+            <option>Business</option>
+        </select>
+
+
+        <input type="text"
+               id="familyMembers"
+               placeholder="Family Members Count">
+
+
+        <select id="petExperience">
+            <option>First Time Pet Owner</option>
+            <option>Have Pet Experience</option>
+        </select>
+
+
+        <select id="houseType">
+            <option>Apartment</option>
+            <option>Independent House</option>
+        </select>
+
+
+        <input type="text"
+               id="reasonAdopt"
+               placeholder="Reason For Adoption">
+
+
+        <input type="text"
+               id="emergencyContact"
+               placeholder="Emergency Contact">
+
+
+        <button class="btn" onclick="validateDetails()">
+            Proceed To Payment
+        </button>
+
+
+        <button class="btn" onclick="goBack('p5')">
+            Back
+        </button>
+
+    </div>
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="script.js"></script>
+
+</body>
+</html>
